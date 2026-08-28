@@ -13,12 +13,12 @@ class AppRouter {
   AppRouter(this.repository);
 
   late final GoRouter router = GoRouter(
-    initialLocation: '/recipes',
+    initialLocation: '/',
     routes: [
       GoRoute(
         path: '/',
         name: 'dashboard',
-        builder: (context, state) => const DashboardScreen(),
+        builder: (context, state) => DashboardScreen(repository: repository),
       ),
 
       GoRoute(
