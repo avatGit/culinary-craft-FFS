@@ -13,7 +13,7 @@ class AppRouter {
   AppRouter(this.repository);
 
   late final GoRouter router = GoRouter(
-    initialLocation: '/',
+    initialLocation: '/recipes',
     routes: [
       GoRoute(
         path: '/',
@@ -30,7 +30,7 @@ class AppRouter {
         path: '/recipe/:id',
         name: 'recipe-detail',
         builder: (context, state) {
-          final recipeId = state.pathParameters['id'];
+          final recipeId = state.pathParameters['id'] ?? '';
           return RecipeDetailScreen(recipeId: recipeId, repository: repository);
         },
       ),

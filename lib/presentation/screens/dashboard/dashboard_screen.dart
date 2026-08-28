@@ -1,8 +1,14 @@
 import 'package:flutter/cupertino.dart';
 
-class DashboardScreen extends StatefulWidget {
+class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
 
   @override
-  State<DashboardScreen> createState() => _DashboardScreenState();
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+
+  // @override
+  // State<DashboardScreen> createState() => _DashboardScreenState();
 }

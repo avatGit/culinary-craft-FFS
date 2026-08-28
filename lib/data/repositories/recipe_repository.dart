@@ -10,7 +10,8 @@ class RecipesRepository {
       duration: 30,
       ingredients: ["pasta", "eggs", "bacon", "parmesan"],
       instructions: ["Cook pasta", "Fry bacon", "Mix eggs and cheese"],
-      imageUrl: "https://example.com/pasta_carbonara.jpg",
+      imageUrl:
+          "https://img.taste.com.au/usDoXvoa/taste/2018/01/healthy-chicken-chow-mein-134805-1.jpg",
       difficulty: "Medium",
     ),
     Recipe(
@@ -24,7 +25,8 @@ class RecipesRepository {
         "Cook the chicken",
         "Add spices and coconut milk",
       ],
-      imageUrl: "https://example.com/chicken_curry.jpg",
+      imageUrl:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKNP3Fv_SScf71c8qZKp40CBkkv08fGq65ZNPHggWp8O6v9SiLFyIIgZ-9&s=10",
       difficulty: "Medium",
     ),
     Recipe(
