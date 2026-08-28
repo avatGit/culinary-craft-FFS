@@ -23,7 +23,7 @@ création de recettes.
 
 |             Tableau de bord             |          Liste des recettes           |          Détails de la recette           |          Formulaire d'ajout          |
 |:---------------------------------------:|:-------------------------------------:|:----------------------------------------:|:------------------------------------:|
-| ![Dashboard](screenshots/Dashboard.png) | ![Liste](screenshots/recipe-list.png) | ![Détail](screenshots/recipe-detail.png) | ![Ajout](screenshots/add-recipe.png) |
+| ![Dashboard](screenshots/Dashboard.png) | ![Liste](screenshots/Recipe-list.png) | ![Détail](screenshots/recipe-detail.png) | ![Ajout](screenshots/add-recipe.png) |
 
 ## Prérequis
 
