@@ -62,14 +62,13 @@ class DashboardScreen extends StatelessWidget {
                 final crossAxisCount = constraints.maxWidth > 600 ? 4 : 2;
 
                 return GridView.count(
-                  // /!\ TRÈS IMPORTANT EN FLUTTER :
                   // shrinkWrap: true oblige le GridView à n'occuper QUE la hauteur exacte de ses enfants.
                   shrinkWrap: true,
                   // Pour éviter un conflit de défilement entre le SingleChildScrollView global et la grille.
                   physics: const NeverScrollableScrollPhysics(),
                   crossAxisCount: crossAxisCount,
                   crossAxisSpacing: 12,
-                  childAspectRatio: 1.35,
+                  childAspectRatio: 1.49,
                   // Rapport Largeur / Hauteur des cartes
                   children: [
                     _KpiCard(
