@@ -1,4 +1,5 @@
 /// Fichier d'exportation central pour le projet CulinaryCraft.
+library;
 
 // Modèles de données
 export 'package:culinary_craft/data/models/recipe.dart';

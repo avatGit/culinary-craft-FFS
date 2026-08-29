@@ -1,5 +1,4 @@
 import 'package:culinary_craft/data/repositories/recipe_repository.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 import '../presentation/screens/add_recipe/add_recipe_screen.dart';
 import '../presentation/screens/dashboard/dashboard_screen.dart';
@@ -43,6 +42,6 @@ class AppRouter {
     ],
 
     errorBuilder: (context, state) =>
-        const Scaffold(body: Center(child: const Text('Page non trouvee.'))),
+        const Scaffold(body: Center(child: Text('Page non trouvee.'))),
   );
 }

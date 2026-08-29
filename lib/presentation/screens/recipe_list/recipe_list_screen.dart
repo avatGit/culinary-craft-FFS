@@ -1,8 +1,6 @@
 import 'package:culinary_craft/data/repositories/recipe_repository.dart';
-import 'package:culinary_craft/presentation/screens/recipe_detail/recipe_detail_screen.dart';
 import 'package:culinary_craft/presentation/widgets/custom_search_bar.dart';
 import 'package:culinary_craft/presentation/widgets/recipe_card.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

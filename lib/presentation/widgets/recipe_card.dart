@@ -1,5 +1,4 @@
 import 'package:culinary_craft/presentation/widgets/difficulty_badge.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../data/models/recipe.dart';

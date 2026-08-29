@@ -9,6 +9,7 @@ class AddRecipeScreen extends StatefulWidget {
 
   const AddRecipeScreen({super.key, required this.repository});
 
+  @override
   State<AddRecipeScreen> createState() => _AddRecipeScreenState();
 }
 
@@ -124,8 +125,9 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
                       ),
                       validator: (val) {
                         if (val == null || val.trim().isEmpty) return 'Requis';
-                        if (int.tryParse(val.trim()) == null)
+                        if (int.tryParse(val.trim()) == null) {
                           return 'Nombre valide';
+                        }
                         return null;
                       },
                     ),
@@ -138,7 +140,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
               TextFormField(
                 controller: _imageUrlController,
                 decoration: const InputDecoration(
-                  labelText: 'URL de l\image',
+                  labelText: "URL de l'image",
                   hintText: 'https://...',
                   border: OutlineInputBorder(),
                   prefixIcon: Icon(Icons.image),
