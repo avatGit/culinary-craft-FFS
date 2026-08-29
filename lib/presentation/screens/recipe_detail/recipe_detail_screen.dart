@@ -1,10 +1,10 @@
 import 'package:culinary_craft/data/repositories/recipe_repository.dart';
 import 'package:culinary_craft/presentation/widgets/difficulty_badge.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RecipeDetailScreen extends StatelessWidget {
-  final RecipesRepository repository;
+  // Passage au type abstrait RecipeRepository
+  final RecipeRepository repository;
   final String recipeId;
 
   const RecipeDetailScreen({

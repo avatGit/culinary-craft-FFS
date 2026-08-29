@@ -9,7 +9,8 @@ import 'package:go_router/go_router.dart';
 import '../../../data/models/recipe.dart';
 
 class RecipeListScreen extends StatefulWidget {
-  final RecipesRepository repository;
+  // Utilisation de la classe abstraite RecipeRepository
+  final RecipeRepository repository;
 
   const RecipeListScreen({super.key, required this.repository});
 
@@ -25,8 +26,8 @@ class _RecipeListScreenState extends State<RecipeListScreen> {
   @override
   void initState() {
     super.initState();
-    // Charger toutes les recettes depuis le repo
-    _allRecipes = widget.repository.getAllRecipe();
+    // Chargement des recettes via la nouvelle méthode getAllRecipes()
+    _allRecipes = widget.repository.getAllRecipes();
     _filteredRecipes = _allRecipes;
   }
 

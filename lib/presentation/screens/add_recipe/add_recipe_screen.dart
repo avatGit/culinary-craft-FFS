@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import '../../../data/models/recipe.dart';
 
 class AddRecipeScreen extends StatefulWidget {
-  final RecipesRepository repository;
+  // Référence au repository via son interface abstraite
+  final RecipeRepository repository;
 
   const AddRecipeScreen({super.key, required this.repository});
 
@@ -50,7 +51,8 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
           .toList();
 
       final newRecipe = Recipe(
-        id: DateTime.now().millisecondsSinceEpoch.toString(),
+        // Génération d'un ID unique plus robuste basé sur les microsecondes
+        id: 'recipe_${DateTime.now().microsecondsSinceEpoch}',
         title: _titleController.text.trim(),
         category: _categoryController.text.trim(),
         imageUrl: _imageUrlController.text.trim(),

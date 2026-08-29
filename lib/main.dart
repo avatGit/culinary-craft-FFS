@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 import 'core/theme/app_theme.dart';
 
 void main() {
-  final recipeRepository = RecipesRepository();
+  // Initialisation de l'implémentation concrète du repository
+  final recipeRepository = RecipeRepositoryImpl();
   final appRouter = AppRouter(recipeRepository);
   runApp(MyApp(appRouter: appRouter));
 }

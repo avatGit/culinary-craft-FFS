@@ -7,13 +7,15 @@ import '../../../data/models/recipe.dart';
 import '../../widgets/recipe_card.dart';
 
 class DashboardScreen extends StatelessWidget {
-  final RecipesRepository repository;
+  // Utilisation du type abstrait RecipeRepository
+  final RecipeRepository repository;
 
   const DashboardScreen({super.key, required this.repository});
 
   @override
   Widget build(BuildContext context) {
-    final recipes = repository.getAllRecipe();
+    // Appel de la nouvelle méthode getAllRecipes()
+    final recipes = repository.getAllRecipes();
 
     // Nombre total de recettes
     final totalRecipes = recipes.length;

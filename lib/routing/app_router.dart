@@ -8,7 +8,8 @@ import '../presentation/screens/recipe_list/recipe_list_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {
-  final RecipesRepository repository;
+  // Utilisation de la classe abstraite pour plus de flexibilité (DIP)
+  final RecipeRepository repository;
 
   AppRouter(this.repository);
 
